@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Display events</title>
+</head>
+<body>
+    <div class="navbar" id="mynavbar">
+        <a href="/index" class="active" style="border-left: 0;"><i class="fa fa-home"></i></a>
+        <a href="/registerOrganisation" class="nav-link">Регистрирай се</a>
+        <a href="/login" class="nav-link">Впиши се</a>
+        <a href="gallery.html" class="nav-link">Еднократни активности</a>
+        <a href="pricing.html" class="nav-link">Продължителни активности</a>
+        <a href="about.html" class="nav-link">Организации</a>
+        <a href="" id="locationObject"><i class="fa fa-location-arrow" style="color: #ffc107;"></i> Varna</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="search-bar">
+        <div class="inputGroup">
+            <input type="text" onkeyup="searchCards()" name="text" class="input" id="search" placeholder="🔍Търсене">
+        </div>
+    </div>
+    <div class="container">
+        <div class="cards-container" id="cards-container">
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <p class="title">Organization name</p>
+                        <img src="img/logo1.png" alt="">
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="backSide">
+                        <p class="title">BACK SIDE 1</p>
+                            <head>About it:</head>
+                    </div>
+                </div>
+            </div>
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <p class="title">FRONT SIDE 1</p>
+                        <img src="img/logo1.png" alt="">
+                        <p></p>
+                    </div>
+                    <div class="backSide">
+                        <p class="title">BACK SIDE 1</p>
+                        <p>Leave Me</p>
+                    </div>
+                </div>
+            </div>
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <p class="title">FRONT SIDE 1</p>
+                        <img src="img/logo1.png" alt="">
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="backSide">
+                        <p class="title">BACK SIDE 1</p>
+                        <p>Leave Me</p>
+                    </div>
+                </div>
+            </div>
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <p class="title">FRONT SIDE 1</p>
+                        <img src="img/logo1.png" alt="">
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="backSide">
+                        <p class="title">BACK SIDE 1</p>
+                        <p>Leave Me</p>
+                    </div>
+                </div>
+            </div>
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <p class="title">FRONT SIDE 2</p>
+                        <img src="img/logo1.png" alt="">
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="backSide">
+                        <p class="title">BACK SIDE 2</p>
+                        <p>Leave Me</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
